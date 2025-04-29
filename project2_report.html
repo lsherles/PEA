@@ -159,15 +159,29 @@
 
         <figure>
           <img src="../blue_output.png" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <figcaption>Exoneration rates throughout New York, by precinct.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>Blue color gradient (0.5): A blue color gradient was used to downplay the differences from high values to low values, 
+            to make the values across precincts appear more stable and consistent. 
+            Compared to a more dramatic color such as red, blue appears more mellow and makes the map seem calm, as if there are no major worries.
+            This is generally an earnest decision, though it could be argued that the choice of color is slightly deceptive 
+            and makes it more difficult for the reader to see major differences in the values. </li>
+          <li>Gradient Scale (-1.5): The gradient scale on the right side of the graph has been changed in a couple important ways.
+            First, the scale has been flipped upside down, so that the lowest values are at the top and the highest values are at the bottom.
+            This made the map appear more positive than it actually is, and also made the colors lighter. 
+            Taking a quick glance and seeing light colors makes the viewer think the values are mostly low, which is not the reality.
+              Furthermore, the highest value on the scale is 50%, even though the highest exoneration rates don't even reach 40%.
+            Meanwhile, the lowest value on the scale is 0%, even though the lowest exoneration rates are around 10%.
+            This compacts the values in the middle to make them appear more similar, and makes the highest values appear less impressive.
+            This is a very deceptive choice, and it made the map appear more positive than it actually is.
+          </li>
+          <li>Annotation (0.5): The annotation, and the title as well, points the reader towards believing that the exoneration rates are generally low.
+             The suggestion in the annotation that the lack of dark shades means exoneration rates are low is deceptive, especially in combination with the gradient scale deception.
+            Furthermore, while it is true that most precincts are around 20%-25% exoneration rate, most are at the upper end of that range, and it would probably be more accurate to say that the values are generally around 25%.</li>
         </ul>
       </section>
 
@@ -176,22 +190,56 @@
 
         <figure>
           <img src="../red_output.png" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <figcaption>Exoneration rates throughout New York, by precinct.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>Red Color Gradient (-0.5): A yellow to red gradient was used to dramatize the colors and make the differences between high and low values seem more drastic.
+            Compared to a more mellow color such as blue, red appears more alarming and makes the map seem more dangerous, as if there are big things to worry about.
+            This is a slightly deceptive decision, as the dark red shades make differences more stark compared to something like a blue gradient.
+            The color red is generally an alarming color and signals that something has gone wrong or is drastic, which makes this choice slightly deceptive as it exaggerates the issue.</li>
+          </li>
+          <li>Data Transformations (-2): The data was transformed so that any precinct with an exoneration rate under 20% was changed to 0%.
+            Even though this only results in 1 precinct being changed, it makes the rest of the precincts darker, as it makes the gradient go all the way down to 0%.
+            Additionally, the top of the gradient only goes up to the highest exoneration rate of 37.8%. Combined with the gradient going down to 0%, this tilts the color of the map and makes the map darker as a whole,
+            which makes the map appear more alarming and dangerous. This is a very deceptive choice, as it makes the map as a whole appear more negative than it actually is without the viewer realizing.
+          </li>
+          <li>Annotation (-1): The annotation suggests that the rates are high throughout all precincts, pointing towards the dark colors as evidence.
+            This is a somewhat deceptive choice, as the annotation suggests that the rates are consistently high but doesn't explain why the map appears so dark and alarming.
+            Furthermore, the suggestion that most precincts have around a 30% exoneration rate is not untrue, but is slightly misleading and a number of 25% would be more accurate for the data. 
+          </li>
+          </li>
         </ul>
       </section>
 
       <section>
         <h2>Final Reflection</h2>
 
-        <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+        <p>
+          Overall, designing these two visualizations displayed how the subtle changes can make the biggest differences.
+          Both of the maps above display the same data, but the differences in color and scale make them look vastly different.
+          The blue map makes the exoneration rates appear stable and low, while the red map makes them appear high and alarming.
+          The most difficult thing was figuring out how to make the maps persuasive. I already had the idea to use the contrast between blue and red
+          to make the maps look different, but I wasn't sure how to make them look persuasive towards two contrasting sides of a proposition. 
+          This is when I started messing around with the scales and data transformations, and then figured out how to make the colors more or less drastic to support each graph's argument.
+        </p>
+        <p>
+          I was most surprised by how many different ways there are to be deceptively persuasive when making a graph. 
+          The main deceptions I used were the color and scale choices, but I also experimented with logarithmic transformations, selective data usage,
+          and truncating the axes in other graphs about different propositions. 
+          I was surprised by how much of a difference these changes made, and how different the graphs looked despite the data being the same.
+          I think that ethical analysis and visualization is something that must be made trasnparent to the reader. The reader must be able to easily understand what is going on in the graph within just a few seconds.
+          They should also be able to understand the data, how it was transformed and what it means in the context of the graph. 
+          The most important thing is how the data is presented and how the reader preceives it.
+        </p>
+        <p>
+          I think that when it comes to "acceptable" versus "misleading" persuasive choices, the bottom line is that the reader should not be misled.
+          The reader should be able to look at the graph, understand the data and how it was analyzed, and come to an accurate conclusion that reflects the data. 
+          The reader should not be misled by the colors, scales, or any other design choices that are made. Any design decisions should be obvious to the reader and make sense given the context of the data and the visualization.
+          If the reader is misled, then the visualization is no longer being truthful, and lying to the reader is unethical and should not be done.
+        </p>
       </section>
     </main>
   </body>
